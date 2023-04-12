@@ -1,18 +1,20 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scholarship Agency</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/login.css">
 </head>
 <body>
-    <nav>
-        <a href="login.html">Login/Register</a> 
-    </nav>
-    <div class="body">
-        <h1>Welcome to Scholarship-Agency</h1>
+    <div>
+        <form action="index1.html" onsubmit="return validateForm()" >
+            <h1>Login</h1><br>
+            <label >Email Id</label>
+            <input type="text" id="email" ><br>
+            <label >Password</label>
+            <input type="password" id="password"><br>
+            <button >Login</button>
+            <button > <a href="register.html">Sign up</a></button><br>
+        </form>
     </div>
+    <script src="/templates/login.js"></script>
 </body>
 </html>
