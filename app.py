@@ -3,7 +3,7 @@ import sqlite3
 app = Flask(__name__)
  
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/register',methods=['GET','POST'])
 
 def register():
     if request.method == 'POST':
@@ -20,7 +20,7 @@ def register():
         
     return render_template('register.html')
    
- 
+
 
 if __name__ == '__main__':
  
