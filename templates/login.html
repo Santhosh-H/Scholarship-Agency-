@@ -1,24 +1,20 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div>
-        <form action="">
+        <form action="index.html" onsubmit="return validateForm()" >
             <h1>Login</h1><br>
-            <label >Username</label>
-            <input type="text"><br>
             <label >Email Id</label>
-            <input type="text"><br>
+            <input type="text" id="email" ><br>
             <label >Password</label>
-            <input type="password" name="" id=""><br>
-            <button >sign up</button><br>
+            <input type="password" id="password"><br>
+            <button >Login</button>
+            <button > <a href="register.html">Sign up</a></button><br>
         </form>
     </div>
-    
+    <script src="/templates/login.js"></script>
 </body>
 </html>
