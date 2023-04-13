@@ -19,9 +19,11 @@ def register():
         cursor.execute("INSERT INTO users (Name, Password,email,Phone) VALUES (?, ?, ?,?)", (name, password, email,phone))
         connection.commit()
         connection.close()
-        print("OK")
-        
+        print("Data Added successfully")
+        #return redirect('/index1')
+        return render_template('index1.html')
     return render_template('register.html')
+    
    
 
 
