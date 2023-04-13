@@ -3,11 +3,14 @@ import sqlite3
 app = Flask(__name__)
  
 
-@app.route('/register',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 
 def register():
+    print("1")
     if request.method == 'POST':
+        print("2")
         name = request.form['name']
+        print("3")
         password = request.form['password']
         email = request.form['email']
         phone= request.form['num']
@@ -16,7 +19,7 @@ def register():
         cursor.execute("INSERT INTO users (Name, Password,email,Phone) VALUES (?, ?, ?,?)", (name, password, email,phone))
         connection.commit()
         connection.close()
-        
+        print("OK")
         
     return render_template('register.html')
    
